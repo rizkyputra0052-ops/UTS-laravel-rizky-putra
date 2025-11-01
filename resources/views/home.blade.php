@@ -9,8 +9,8 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">UTS Laravel</a>
             <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -21,21 +21,28 @@
     <!-- Offcanvas Sidebar -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebarMenuLabel">Menu</h5>
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">UTS Laravel</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div class="list-group list-group-flush">
+        <div class="offcanvas-body d-flex flex-column">
+            <!-- Navigation Links -->
+            <div class="list-group list-group-flush mb-3">
                 <a href="#" class="list-group-item list-group-item-action">Home</a>
-                <a href="#" class="list-group-item list-group-item-action">Profile</a>
-                <a href="#" class="list-group-item list-group-item-action">About</a>
-                <a href="#" class="list-group-item list-group-item-action">Logout</a>
+                <a href="#" class="list-group-item list-group-item-action">Produk</a>
+            </div>
+
+            <!-- Search Form -->
+            <div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </div>
 
     <!-- Main Content -->
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
         <h1>Halaman Home</h1>
     </div>
 
