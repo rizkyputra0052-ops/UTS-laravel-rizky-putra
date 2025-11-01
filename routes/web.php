@@ -16,5 +16,6 @@ Route::get('/produk', function () {
 });
 
 Route::get('/tambah-produk', function () {
-    return view('tambah-produk');
+    $jenisProduk = ["Pilih Produk", "Alat tulis", "Elektronik", "Sembako"];
+    return view('tambah-produk', ['jenisProduk' => $jenisProduk]);
 });

@@ -20,10 +20,9 @@
             <div class="col-md-4">
                 <label for="jenis" class="form-label">Jenis Produk</label>
                 <select class="form-select" id="jenis" name="jenis">
-                    <option selected>Pilih Produk</option>
-                    <option value="Alat Tulis">Alat Tulis</option>
-                    <option value="Elektronik">Elektronik</option>
-                    <option value="Lainnya">Lainnya</option>
+                    @foreach($jenisProduk as $jenis)
+                        <option value="{{ $jenis }}">{{ $jenis }}</option>
+                    @endforeach
                 </select>
             </div>
         </div>
